@@ -93,6 +93,31 @@ input {
 .navigation__element:hover {
     background-color: #e4f0f3;
 }
+/*-------------------------------------------------Logic-Navigation-Elements----------------------------------------------------------*/
+
+#slide-one:checked ~ label[for='slide-one'] > .navigation__element {
+    background-color: #e4f0f3;
+    box-sizing: border-box;
+    border: 2px solid #7faae8;
+}
+
+#slide-two:checked ~ label[for='slide-two'] > .navigation__element {
+    background-color: #e4f0f3;
+    box-sizing: border-box;
+    border: 2px solid #7faae8;
+}
+
+#slide-three:checked ~ label[for='slide-three'] > .navigation__element {
+    background-color: #e4f0f3;
+    box-sizing: border-box;
+    border: 2px solid #7faae8;
+}
+
+#slide-four:checked ~ label[for='slide-four'] > .navigation__element {
+    background-color: #e4f0f3;
+    box-sizing: border-box;
+    border: 2px solid #7faae8;
+}
 
 /*-------------------------------------------------Media----------------------------------------------------------*/
 
