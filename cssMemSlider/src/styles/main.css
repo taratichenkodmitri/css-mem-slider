@@ -49,13 +49,13 @@ label {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .slider__texts {
     display: flex;
-    overflow: hidden;
+    flex: 1 0 auto;
 }
-
 /*-------------------------------------------------Slide----------------------------------------------------------*/
 
 .slide {
@@ -86,6 +86,8 @@ label {
     display: flex;
     gap: 0 0.5rem;
     justify-self: end;
+    background-color: #25282a;
+    z-index: 100;
 }
 
 .navigation__element {
@@ -127,9 +129,39 @@ label:hover > .navigation__element {
     background-color: #e4f0f3;
 }
 
-/*-------------------------------------------------Logic-Slider-Images----------------------------------------------------------*/
+/*-------------------------------------------------Slider-Movement-Logic----------------------------------------------------------*/
 
+#slide-one:checked ~ .slider__images {
+    transform: translateX(0);
+}
 
+#slide-two:checked ~ .slider__images {
+    transform: translateX(-50%);
+}
+
+#slide-three:checked ~ .slider__images {
+    transform: translateX(0);
+}
+
+#slide-four:checked ~ .slider__images {
+    transform: translateX(0);
+}
+
+#slide-one:checked ~ .slider__container > .slider__texts {
+    transform: translateX(0);
+}
+
+#slide-two:checked ~ .slider__container > .slider__texts {
+    transform: translateX(-100%);
+}
+
+#slide-three:checked ~ .slider__container > .slider__texts {
+    transform: translateX(0);
+}
+
+#slide-four:checked ~ .slider__container > .slider__texts {
+    transform: translateX(0);
+}
 
 /*-------------------------------------------------Media----------------------------------------------------------*/
 
