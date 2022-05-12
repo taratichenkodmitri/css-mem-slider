@@ -99,25 +99,25 @@ label {
 
 /*-------------------------------------------------Logic-Navigation-Elements----------------------------------------------------------*/
 
-#slide-one:checked ~ label[for='slide-one'] > .navigation__element {
+#slide-one:checked ~ .slider__container > .navigation > label[for='slide-one'] > .navigation__element {
     background-color: #e4f0f3;
     box-sizing: border-box;
     border: 2px solid #7faae8;
 }
 
-#slide-two:checked ~ label[for='slide-two'] > .navigation__element {
+#slide-two:checked ~ .slider__container > .navigation > label[for='slide-two'] > .navigation__element {
     background-color: #e4f0f3;
     box-sizing: border-box;
     border: 2px solid #7faae8;
 }
 
-#slide-three:checked ~ label[for='slide-three'] > .navigation__element {
+#slide-three:checked ~ .slider__container > .navigation > label[for='slide-three'] > .navigation__element {
     background-color: #e4f0f3;
     box-sizing: border-box;
     border: 2px solid #7faae8;
 }
 
-#slide-four:checked ~ label[for='slide-four'] > .navigation__element {
+#slide-four:checked ~ .slider__container > .navigation > label[for='slide-four'] > .navigation__element {
     background-color: #e4f0f3;
     box-sizing: border-box;
     border: 2px solid #7faae8;
@@ -126,6 +126,10 @@ label {
 label:hover > .navigation__element {
     background-color: #e4f0f3;
 }
+
+/*-------------------------------------------------Logic-Slider-Images----------------------------------------------------------*/
+
+
 
 /*-------------------------------------------------Media----------------------------------------------------------*/
 
