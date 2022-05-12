@@ -17,6 +17,14 @@
 input {
     display: none;
 }
+
+label {
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
 /*-------------------------------------------------Slider----------------------------------------------------------*/
 
 .slider{
@@ -76,7 +84,7 @@ input {
 
 .navigation {
     display: flex;
-    gap: 0 0.8rem;
+    gap: 0 0.5rem;
     justify-self: end;
 }
 
@@ -87,12 +95,8 @@ input {
     display: inline-block;
     border-radius: 50%;
     border: none;
-    cursor: pointer;
 }
 
-.navigation__element:hover {
-    background-color: #e4f0f3;
-}
 /*-------------------------------------------------Logic-Navigation-Elements----------------------------------------------------------*/
 
 #slide-one:checked ~ label[for='slide-one'] > .navigation__element {
@@ -119,6 +123,10 @@ input {
     border: 2px solid #7faae8;
 }
 
+label:hover > .navigation__element {
+    background-color: #e4f0f3;
+}
+
 /*-------------------------------------------------Media----------------------------------------------------------*/
 
 @media screen and (max-width: 768px) {
@@ -138,5 +146,10 @@ input {
     .navigation__element {
         width: 0.5rem;
         height: 0.5rem;
+    }
+
+    label {
+        width: 1rem;
+        height: 1rem;
     }
 }
