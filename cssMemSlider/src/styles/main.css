@@ -40,8 +40,9 @@ label {
 
 .slider__images {
     display: flex;
-    width: calc(70vw * 2);
+    width: calc(70vw * 4);
     height: 60vh;
+    transition: transform 0.5s;
 }
 
 .slider__container {
@@ -54,7 +55,8 @@ label {
 
 .slider__texts {
     display: flex;
-    flex: 1 0 auto;
+
+    transition: transform 0.5s;
 }
 /*-------------------------------------------------Slide----------------------------------------------------------*/
 
@@ -74,6 +76,14 @@ label {
 
 .slide_two {
     background-image: url('../images/Badums.jpg');
+}
+
+.slide_three {
+    background-image: url('../images/ZAGZAGS.jpg');
+}
+
+.slide_four {
+    background-image: url('../images/Stalker.jpg');
 }
 /*-------------------------------------------------Text----------------------------------------------------------*/
 .text {
@@ -136,15 +146,15 @@ label:hover > .navigation__element {
 }
 
 #slide-two:checked ~ .slider__images {
-    transform: translateX(-50%);
+    transform: translateX(-25%);
 }
 
 #slide-three:checked ~ .slider__images {
-    transform: translateX(0);
+    transform: translateX(-50%);
 }
 
 #slide-four:checked ~ .slider__images {
-    transform: translateX(0);
+    transform: translateX(-75%);
 }
 
 #slide-one:checked ~ .slider__container > .slider__texts {
@@ -156,16 +166,20 @@ label:hover > .navigation__element {
 }
 
 #slide-three:checked ~ .slider__container > .slider__texts {
-    transform: translateX(0);
+    transform: translateX(-200%);
 }
 
 #slide-four:checked ~ .slider__container > .slider__texts {
-    transform: translateX(0);
+    transform: translateX(-300%);
 }
 
 /*-------------------------------------------------Media----------------------------------------------------------*/
 
 @media screen and (max-width: 768px) {
+    .slider__images {
+        height: 20vh;
+    }
+
     .slider__container {
         flex-direction: column;
         gap: 1rem;
