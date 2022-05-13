@@ -29,7 +29,7 @@ label {
 
 .slider{
     width: 70vw;
-    height: 60vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
